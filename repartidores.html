@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PROYECTO WEB</title>
+        <link rel="stylesheet" href=" css.css">
+        
+
+    </head>
+    <body >
+
+        <header>
+            <h1>ADMINISTRACION</h1>
+            <h3>REPARTIDORES</h3>
+            <nav>
+                <a href = "index.html" class="aa">Inicio</a>
+                <a href = "cliente.html" class="aa">Cliente</a>
+                <a href = "empresa.html" class="aa">Empresa</a>
+                
+                <a href = "pedidos.html" class="aa">Pedidos</a>
+
+                <!--<a href = "" onclick="welcome()">Ayuda</a>-->
+                <a href = "reporte_de_ganancia.html" class="aa">Reporte/Ganancias</a>
+            </nav>
+        </header>
+
+
+        <section class="nav_emer">
+
+            <img  src="images (2).jpg"> 
+            <br>
+            <img src="images (3).jpg"> 
+            <br>
+            <img src="images (4).jpg"> 
+        </section>
+        <form action="" class="formulario" id="formulario" method="GET">
+                
+              
+               
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+            
+            <!-- Grupo: Cedula -->
+            <div class="formulario__grupo" id="grupo__cedula">
+                <label for="cedula" class="formulario__label">RUC</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="cedula" id="cedula" placeholder="4491234567">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La cedula debe tener 10 digitos.</p>
+            </div>
+
+
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            </div>
+              <!-- Grupo: Tipo de empresa -->
+              <div class="formulario__grupo" id="grupo__tipo">
+                <label for="tipo" class="formulario__label">Tipo de Empresa</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="tipo" id="tipo" placeholder="John Doe">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+             <!-- Grupo: Horario -->
+             <div class="formulario__grupo" id="grupo__horario">
+                <label for="horario" class="formulario__label">Horario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="horario" id="horario" placeholder="Matutino//Diruno//Nocturno">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El horario  tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+            <!-- Grupo: Tipo de transporte -->
+            <div class="formulario__grupo" id="grupo__transporte">
+                <label for="transporte" class="formulario__label">Tipo de Transporte</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="transporte" id="transporte" placeholder="John Doe">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El transporte tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="0999999999">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+            </div>
+
+            <!-- Grupo: Terminos y Condiciones -->
+            
+        <div class="formulario__grupo" id="grupo__terminos">
+            <p>Metodo de pago:</p>
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="radio" name="pago" id="debito">
+                Debito
+            </label>
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="radio" name="pago" id="credito">
+                Credito
+            </label>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Registrar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
+        
+        </form>
+        
+    <footer> TODOS LOS DERECHOS RESERVADOS<br>
+        Desarrollador por Hommer Chenche</footer>
+
+    <script src="repartidores.js"></script>   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
+
